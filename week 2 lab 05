@@ -1,0 +1,5 @@
+student_number = input("How many students are there?")
+student_group =(int(student_number)// 25)
+student_remainder = (int(student_number)% 25)
+print("Number of full groups ", student_group)
+print("How many people left in a smaller group:",student_remainder)
