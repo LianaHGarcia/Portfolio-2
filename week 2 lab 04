@@ -1,0 +1,11 @@
+question_1 = input("What's the number of students needed?")
+question_2 = input("How many groups are needed?")
+groups = int(question_1)//int(question_2)
+#will give the full group number
+groups_leftover = int(question_1)%int(question_2)
+#will provide how many ppl will be left over
+if (question_2 < "1"):
+    print("There will be",groups,"groups with",groups_leftover,"students left over")
+if (question_2 >= "1"):
+    #if theres 1 student, the grammar will change from ^students^ to ^student^
+    print("There will be", groups, "groups with", groups_leftover, "student left over")
