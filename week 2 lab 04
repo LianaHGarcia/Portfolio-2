@@ -1,5 +1,7 @@
-student_number = input("How many students are there?")
-student_group =(int(student_number)// 25)
-student_remainder = (int(student_number)% 25)
-print("Number of full groups ", student_group)
-print("How many people left in a smaller group:",student_remainder)
+question_1 = int(input("How many sweets are there?"))
+question_2 = int(input("how many students are there?"))
+sweets_num = question_1//question_2
+#will give the full num of sweets allowed to give to each student
+sweets_remainder = question_1%question_2
+#how many sweets that will be left
+print("You can give", sweets_num, "sweets to each student and you will have", sweets_remainder,"sweets left over")
